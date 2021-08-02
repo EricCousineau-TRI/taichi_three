@@ -6,8 +6,9 @@ ti.init(ti.gpu)
 
 scene = tina.PTScene(smoothing=True, texturing=True)
 scene.load_gltf('assets/cornell.gltf')
-scene.add_object(tina.MeshTransform(tina.MeshModel('assets/plane.obj'),
-    tina.translate([0, 3.98, 0]) @ tina.scale(0.1)), tina.Lamp(color=64))
+# scene.add_object(tina.MeshTransform(tina.MeshModel('assets/plane.obj'),
+#     tina.translate([0, 3.98, 0]) @ tina.scale(0.1)), tina.Lamp(color=64))
+# scene.add_object(tina.MeshModel('assets/plane.obj'))
 
 if isinstance(scene, tina.PTScene):
     scene.update()
