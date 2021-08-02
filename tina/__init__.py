@@ -18,7 +18,8 @@ def require_version(*ver):
         raise RuntimeError(msg)
 
 
-from .lazimp import *
+# from .lazimp import *
+lazyguard = True
 from .hacker import *
 from .common import *
 from .advans import *
